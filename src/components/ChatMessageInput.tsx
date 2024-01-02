@@ -11,7 +11,11 @@ export function ChatMessageInput() {
   const onSend: DOMAttributes<HTMLButtonElement>["onClick"] = (e) => {
     e.preventDefault();
     if (inputRef.current?.value) {
-      chat.onSendMessage(inputRef.current.value);
+      chat.onSendMessage(inputRef.current.value).then(() => {
+        if (inputRef.current) {
+          inputRef.current.value = "";
+        }
+      });
     } else {
       throw new Error("Message is required");
     }
