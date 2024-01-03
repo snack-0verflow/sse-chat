@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Demo
+
+https://github.com/snack-0verflow/sse-chat/assets/36766508/930a38dd-eb57-4eab-ab0f-ac0b2523ec44
+
 ## Getting Started
 
 First, run the development server:
